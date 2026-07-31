@@ -15,7 +15,7 @@
 | L09 | Check page titles, headings and landmarks | Each page has one clear `h1` and semantic structure | Source structure checked | Pass |
 | L10 | Check telephone, email and external map links | Correct link types open the expected target | `tel:`, `mailto:` and secure external link checked | Pass |
 | L11 | Check console while using interactions | No JavaScript errors appear | JavaScript syntax and expected elements checked | Pass |
-| L12 | Check Chrome, Firefox, Edge and Safari | Content, navigation and controls remain usable | Chrome/Firefox verified locally; Edge/Safari require device confirmation | Partial |
+| L12 | Check Chrome, Firefox, Edge and Safari | Content, navigation and controls remain usable | Automated source checks passed; manual cross-browser confirmation remains required | Partial |
 
 ## Errors found and resolved locally
 
@@ -42,4 +42,3 @@ Upload environment: GitHub Pages-style static hosting. Test date: 31 July 2026.
 | U07 | Submit HTML pages to a validator | One redundant attribute warning found | Removed the redundant attribute | Pass |
 
 The post-upload log is explicitly simulated because no production business server or confirmed domain was provided in the brief.
-
