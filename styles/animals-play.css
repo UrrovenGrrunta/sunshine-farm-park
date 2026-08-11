@@ -1,0 +1,13 @@
+.page-hero--animals { background: radial-gradient(ellipse at 79% 45%, #f5f0df 0 13%, transparent 13.3%), radial-gradient(ellipse at 86% 42%, #5a493c 0 3%, transparent 3.3%), linear-gradient(135deg, #e8f0c7 62%, #76a671 62%); }
+.animal-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; text-align: center; }
+.animal-row article { padding: 2rem; background: var(--color-paper); border-radius: var(--radius); box-shadow: var(--shadow); }
+.animal-row span { display: block; margin-bottom: 1rem; color: var(--color-brown); font-size: 4rem; }
+.play-scene { display: flex; align-items: flex-end; justify-content: space-evenly; min-height: 19rem; padding: 2rem; color: #fff; background: linear-gradient(#9bcbd4 0 55%, #74a265 56%); border-radius: var(--radius); font-size: 5rem; }
+.tick-list { padding-left: 1.25rem; }
+.tick-list li { margin-bottom: .45rem; }
+.rules { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.rules p { margin: 0; padding: 1.5rem; background: rgba(255,255,255,.68); border-radius: var(--radius-small); }
+
+@media (max-width: 800px) {
+  .animal-row, .rules { grid-template-columns: 1fr; }
+}
