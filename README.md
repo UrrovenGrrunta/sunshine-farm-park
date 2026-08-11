@@ -22,7 +22,7 @@ Then visit `http://localhost:8000`.
 
 ## Technology
 
-The project uses semantic HTML5, responsive CSS and vanilla JavaScript only. It has no external dependencies, frameworks or tracking scripts.
+The project uses semantic HTML5, responsive CSS and vanilla JavaScript only. Shared styles live in `style.css`, while each page loads its own stylesheet from `styles/`. It has no external dependencies, frameworks or tracking scripts.
 
 ## Project documentation
 
@@ -31,4 +31,3 @@ Planning and testing evidence is available in the [`docs`](docs) folder.
 ## Important content note
 
 The address, telephone number, email address, opening times, menu items and operational details are sample content created for this student project. Replace them with confirmed business information before real publication.
-
