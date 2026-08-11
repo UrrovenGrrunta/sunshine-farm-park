@@ -1,0 +1,32 @@
+.hero { display: grid; grid-template-columns: 1.08fr 0.92fr; max-width: var(--content-width); min-height: 35rem; margin: 2rem auto 0; overflow: hidden; background: var(--color-lime); border-radius: var(--radius); box-shadow: var(--shadow); }
+.hero__content { align-self: center; padding: clamp(2.25rem, 6vw, 5rem); }
+.hero__content > p:not(.eyebrow) { max-width: 38rem; font-size: 1.1rem; }
+.hero__scene { position: relative; min-height: 30rem; overflow: hidden; background: linear-gradient(#92cbd4 0 58%, #79a368 59%); }
+.hero__scene::before, .hero__scene::after { position: absolute; right: -20%; bottom: -10%; left: -20%; height: 47%; background: #5d8b55; border-radius: 50% 50% 0 0; content: ""; transform: rotate(-7deg); }
+.hero__scene::after { bottom: -22%; background: #3e6c46; transform: rotate(9deg); }
+.hero__sun { position: absolute; top: 10%; right: 15%; width: 7rem; height: 7rem; background: var(--color-sun); border: 12px solid rgba(255,255,255,.18); border-radius: 50%; }
+.hero__cloud { position: absolute; width: 7rem; height: 2.4rem; background: rgba(255,255,255,.8); border-radius: 99px; }
+.hero__cloud::after { position: absolute; left: 1.2rem; bottom: 0; width: 3.5rem; height: 3.5rem; background: inherit; border-radius: 50%; content: ""; }
+.hero__cloud--one { top: 22%; left: 10%; }
+.hero__cloud--two { top: 38%; right: 4%; transform: scale(.7); }
+.hero__barn { position: absolute; z-index: 2; right: 23%; bottom: 16%; color: #f4ead2; font: 11rem/1 Georgia, serif; filter: drop-shadow(0 10px 0 #8f543d); }
+.feature-card { border-top: 8px solid var(--color-leaf); }
+.feature-card__icon { display: grid; width: 3.5rem; height: 3.5rem; margin-bottom: 1.5rem; color: var(--color-forest); background: var(--color-lime); border-radius: 50%; place-items: center; font-size: 1.6rem; }
+.feature-card p { color: var(--color-muted); }
+.text-link { color: var(--color-forest); font-weight: 800; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.callout { display: flex; align-items: center; justify-content: space-between; gap: 2rem; max-width: var(--content-width); margin: 0 auto 6rem; padding: 2.5rem clamp(1.5rem, 5vw, 4rem); color: #fff; background: var(--color-forest); border-radius: var(--radius); }
+.callout h2 { margin-bottom: 0.4rem; }
+.callout p { margin-bottom: 0; }
+.callout .eyebrow { color: var(--color-lime); }
+
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; margin-top: 1rem; border-radius: 0; }
+  .hero__scene { min-height: 20rem; }
+  .hero__barn { right: 30%; font-size: 8rem; }
+}
+
+@media (max-width: 480px) {
+  .hero__content { padding: 2rem 1.5rem; }
+  .hero__scene { min-height: 15rem; }
+  .hero__sun { width: 4.5rem; height: 4.5rem; }
+}
