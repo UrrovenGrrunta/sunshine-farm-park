@@ -1,0 +1,15 @@
+.page-hero--shop { background: radial-gradient(circle at 82% 35%, #c7563d 0 6%, transparent 6.2%), radial-gradient(circle at 74% 50%, #e5bc50 0 7%, transparent 7.2%), linear-gradient(135deg, #f5e4c4 62%, #aac080 62%); }
+.product-card { padding: 0; overflow: hidden; }
+.product-card > div:last-child { padding: 1.75rem; }
+.product-card__art { display: grid; height: 13rem; color: rgba(255,255,255,.85); place-items: center; font-size: 6rem; }
+.product-card__art--produce { background: radial-gradient(circle at 30% 40%, #dc5945 0 9%, transparent 9.5%), radial-gradient(circle at 62% 63%, #e8bf4f 0 10%, transparent 10.5%), #7d9a5e; }
+.product-card__art--plants { background: linear-gradient(150deg, #a7d1d4 0 50%, #6e9c62 51%); }
+.product-card__art--gifts { background: #c88f5f; }
+.tag { margin-bottom: 0.4rem; color: var(--color-leaf); font-weight: 800; font-size: 0.75rem; text-transform: uppercase; letter-spacing: .1em; }
+.season-list { display: grid; gap: .75rem; }
+.season-list div { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem; background: #edf3df; border-radius: var(--radius-small); }
+.season-list span { color: var(--color-leaf); font-weight: 800; }
+
+@media (max-width: 480px) {
+  .season-list div { flex-direction: column; gap: 0; }
+}
