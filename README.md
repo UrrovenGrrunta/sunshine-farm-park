@@ -1,5 +1,7 @@
 # Sunshine Farm Park
 
+**Project status: Finished**
+
 A responsive five-page promotional website for a fictional farm visitor attraction located between Edinburgh and Carlisle. The site introduces the farm shop, petting zoo, café, play park, walking routes, location and opening times to families, travellers and garden enthusiasts.
 
 ## Pages
